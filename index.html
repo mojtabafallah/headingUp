@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/persian-datepicker.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/persian-date.min.js"></script>
+    <script src="js/persian-datepicker.min.js"></script>
+    <title>راس گیری چک</title>
+</head>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".example1").pDatepicker({
+            observer: true,
+            format: 'YYYY/MM/DD',
+            altField: '.observer-example-alt'
+        });
+    });
+</script>
+
+<body style="direction: rtl;">
+    <div class="container">
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="example1" />
+            </label>
+            <input class="observer-example-alt" />
+
+            <label>
+                مبلغ چک:
+                <input type="text" name="price" class="price">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number" readonly class="day">
+            </label>
+            <button class="add_row">افزودن چک</button>
+        </div>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+    <div class="final">
+        <label>
+            راس:
+            <input type="number" readonly class="day">
+        </label>
+        <label>
+            سود:
+            <input type="number" readonly class="day">
+        </label>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
