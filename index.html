@@ -11,50 +11,144 @@
     <script src="js/persian-datepicker.min.js"></script>
     <title>راس گیری چک</title>
 </head>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".example1").pDatepicker({
-            observer: true,
-            format: 'YYYY/MM/DD',
-            altField: '.observer-example-alt'
-        });
-    });
-</script>
 
 <body style="direction: rtl;">
     <div class="container">
         <div class="row">
             <label>
                 تاریخ چک:
-                <input type="text" class="example1" />
+                <input type="text" class="date-promissory-note" data-count="1"  />
             </label>
-            <input class="observer-example-alt" />
+            <input type="hidden" class="observer-example-alt" data-count="1"  />
 
             <label>
                 مبلغ چک:
-                <input type="text" name="price" class="price">
+                <input value="0" type="text" name="price" class="price" data-count="1">
             </label>
 
             <label>
                 روز مانده:
-                <input type="number" readonly class="day">
+                <input type="number"  class="day" id="day-1">
+            </label>        
+        </div>
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="date-promissory-note" data-count="2"  />
             </label>
-            <button class="add_row">افزودن چک</button>
+            <input type="hidden" class="observer-example-alt" data-count="2"  />
+
+            <label>
+                مبلغ چک:
+                <input value="0" type="text" name="price" class="price" data-count="2">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number"  class="day" id="day-2">
+            </label>        
+        </div>
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="date-promissory-note" data-count="3"  />
+            </label>
+            <input type="hidden" class="observer-example-alt" data-count="3"  />
+
+            <label>
+                مبلغ چک:
+                <input value="0" type="text" name="price" class="price" data-count="3">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number"  class="day" id="day-3">
+            </label>        
+        </div>
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="date-promissory-note" data-count="4"  />
+            </label>
+            <input type="hidden" class="observer-example-alt" data-count="4"  />
+
+            <label>
+                مبلغ چک:
+                <input value="0" type="text" name="price" class="price" data-count="4">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number"  class="day" id="day-4">
+            </label>        
+        </div>
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="date-promissory-note" data-count="5"  />
+            </label>
+            <input type="hidden" class="observer-example-alt" data-count="5"  />
+
+            <label>
+                مبلغ چک:
+                <input value="0" type="text" name="price" class="price" data-count="5">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number"  class="day" id="day-5">
+            </label>        
+        </div>
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="date-promissory-note" data-count="6"  />
+            </label>
+            <input type="hidden" class="observer-example-alt" data-count="6"  />
+
+            <label>
+                مبلغ چک:
+                <input value="0" type="text" name="price" class="price" data-count="6">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number"  class="day" id="day-6">
+            </label>        
+        </div>
+        <div class="row">
+            <label>
+                تاریخ چک:
+                <input type="text" class="date-promissory-note" data-count="7"  />
+            </label>
+            <input type="hidden" class="observer-example-alt" data-count="7"  />
+
+            <label>
+                مبلغ چک:
+                <input value="0" type="text" name="price" class="price" data-count="7">
+            </label>
+
+            <label>
+                روز مانده:
+                <input type="number"  class="day" id="day-7">
+            </label>        
         </div>
     </div>
-    
+
     <br>
     <hr>
     <br>
 
     <div class="final">
+        <button id="calc">محاسبه</button><br>
+  <br>
         <label>
             راس:
-            <input type="number" readonly class="day">
+            <input type="number" readonly class="ras">
         </label>
         <label>
-            سود:
-            <input type="number" readonly class="day">
+           سود 5 درصد:
+            <input type="number" readonly class="sood">
         </label>
     </div>
 </body>
